@@ -3,4 +3,4 @@
 ## Firewall configurations using different methods
 
 - Firewall configuration with iptables
-- Firewall configuration with firewalld
+- Firewall configuration with firewallD
