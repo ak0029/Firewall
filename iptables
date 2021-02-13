@@ -1,0 +1,14 @@
+# Firewall configuration using iptables
+# chains --> series of rules
+# top to bottom package processing --> If packet makes a way without matching a rule tthe chains default action is taken
+# For CentOS
+
+sudo iptable -L
+sudo iptables-save > rules-backup
+sudo iptable -F
+sudo iptable -L
+
+nc -l 4545  # In new terminal keep running
+
+nc 10.0.2.29 4545 # put some text it will appear on second terminal 
+
