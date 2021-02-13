@@ -16,6 +16,6 @@ nc 10.0.2.29 4545 # put some text it will appear on second terminal
 sudo iptable -A INPUT -P tcp --dport 4545 -j REJECT   #Try sending data from other terminal, it is blocked & if disconnected u can't connecct again-- man ss
 sudo iptable -A INPUT -P tcp --dport 4545 -j ACCEPT   # 2nd rule
 sudo iptables-save    # Rules confliction--> Higher hierarchy execcuted .'. still blocking works
-sudo iptables -F  # Flush the rules
+sudo iptable -F  # Flush the rules
 sudo iptables-restore rules-backup
 sudo iptable -L
