@@ -17,5 +17,5 @@ sudo iptable -A INPUT -P tcp --dport 4545 -j REJECT   #Try sending data from oth
 sudo iptable -A INPUT -P tcp --dport 4545 -j ACCEPT   # 2nd rule
 sudo iptables-save    # Rules confliction--> Higher hierarchy execcuted .'. still blocking works
 sudo iptable -F  # Flush the rules
-sudo iptables-restore rules-backup
+sudo iptables-restore rules-backup    # set as defualt rules chains
 sudo iptable -L
