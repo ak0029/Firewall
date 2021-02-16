@@ -1,0 +1,6 @@
+# FirewallD --> Blocks incoming traffic except SSH might configured during install
+
+nc -l 5454      # Listening on port 5454
+sudo firewall-cmd   # tab & explore options
+sudo firewall-cmd --zone=public --add-port=5454/tcp --permanent
+
