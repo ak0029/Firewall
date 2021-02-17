@@ -6,7 +6,7 @@ sudo firewall-cmd --zone=public --add-port=5454/tcp --permanent
 sudo firewall-cmd --reload      # reload the connections
 
 # open new terminal
-nc 10.0.2.29 5454
+nc 10.0.2.29 5454     # use port 5454
 hello
 
 # back to old terminal
