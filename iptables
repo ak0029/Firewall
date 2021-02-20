@@ -6,7 +6,7 @@
 sudo iptable -L
 sudo iptables-save > rules-backup
 sudo iptable -F       # Flush the rules
-sudo iptable -L
+sudo iptable -L       # List of rules
 
 nc -l 4545  # In new terminal keep running
 
