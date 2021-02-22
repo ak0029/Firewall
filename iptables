@@ -3,7 +3,7 @@
 # top to bottom package processing --> If packet makes a way without matching a rule tthe chains default action is taken
 # For CentOS
 
-sudo iptable -L
+sudo iptable -L       # List of rules
 sudo iptables-save > rules-backup
 sudo iptable -F       # Flush the rules
 sudo iptable -L       # List of rules
