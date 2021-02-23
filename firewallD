@@ -2,7 +2,7 @@
 
 nc -l 5454      # Listening on port 5454
 sudo firewall-cmd   # tab & explore options
-sudo firewall-cmd --zone=public --add-port=5454/tcp --permanent
+sudo firewall-cmd --zone=public --add-port=5454/tcp --permanent     # add permanent rule for port 5454 in public zone
 sudo firewall-cmd --reload      # reload the connections
 
 # open new terminal
