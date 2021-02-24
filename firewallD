@@ -10,7 +10,7 @@ nc 10.0.2.29 5454     # use port 5454
 hello                 # send a message 
 
 # back to old terminal
-sudo firewall-cmd --zone=public --remove-port=5454/tcp --permanent    # remove the rule
+sudo firewall-cmd --zone=public --remove-port=5454/tcp --permanent    # remove the rule permanently
 sudo firewall-cmd --reload      # reload the connections
 
 # back to another terminal 
