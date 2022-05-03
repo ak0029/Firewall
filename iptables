@@ -1,6 +1,6 @@
 # Firewall configuration using iptables
 # chains --> series of rules
-# top to bottom package processing --> If packet makes a way without matching a rule tthe chains default action is taken
+# top to bottom package processing --> If packet makes a way without matching a rule tthe chains default action is taken.
 # For CentOS
 
 sudo iptable -L       # List of rules
